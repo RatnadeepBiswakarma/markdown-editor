@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import marked from "marked";
+import "./css/Renderer.css";
 
 class Renderer extends Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class Renderer extends Component {
     this.renderer.current.innerHTML = this.getMarkdown(this.props.content);
   }
   render() {
-    return <div ref={this.renderer} id="my-html-content"></div>;
+    return <div ref={this.renderer} id="preview"></div>;
   }
 }
 
