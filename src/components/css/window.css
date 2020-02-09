@@ -1,5 +1,4 @@
 .window-container {
-  border: 1px solid #aaaaaa;
   width: 100vw;
   height: 50vh;
   border-radius: 7px 7px 0 0;
@@ -79,7 +78,7 @@
     height: 95%;
     margin: 1rem auto;
     box-sizing: border-box;
-    box-shadow: 0 3px 8px 0 grey;
+    box-shadow: 0 3px 8px 0 rgb(26, 26, 26);
   }
 
   .editor-window {
