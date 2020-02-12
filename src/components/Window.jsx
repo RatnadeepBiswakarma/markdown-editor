@@ -6,9 +6,6 @@ import "./css/window.css";
 class Window extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      content: "# hello world"
-    };
     this.handleInput = this.handleInput.bind(this);
     this.handleWindowButtonClick = this.handleWindowButtonClick.bind(this);
   }
@@ -44,7 +41,10 @@ class Window extends Component {
         </div>
         <div className="content">
           {this.props.type === "editor" ? (
-            <Editor handleInput={this.handleInput} />
+            <Editor
+              handleInput={this.handleInput}
+              content={this.props.markdownContent}
+            />
           ) : (
             <Renderer content={this.props.markdownContent} />
           )}
