@@ -5,6 +5,7 @@
   overflow-x: hidden;
   box-sizing: border-box;
   background-color: white;
+  animation: fadeIn 0.3s ease-out;
 }
 
 .content {
@@ -111,5 +112,14 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
