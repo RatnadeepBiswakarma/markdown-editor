@@ -21,7 +21,7 @@ class MarkdownApp extends Component {
 
 \`\`\`
 function getSkills() {
-return ['Javascript', 'VueJs', 'React', 'CSS', 'HTML']
+      return ['Javascript', 'VueJs', 'React', 'CSS', 'HTML']
 }
 \`\`\`
 
